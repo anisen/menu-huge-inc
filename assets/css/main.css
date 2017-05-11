@@ -8,6 +8,59 @@ nav {
 	margin-top: 0;
 	position: fixed;
 	padding-top: 0px;
-	background: none;
-	transition: all 0.6s cubic-bezier(0.7,0.01,0.3,1)
+	background :none;
+	transition: all 0.6s cubic-bezier(0.7, 0.01, 0.3, 1);
+}
+
+
+/*Menu bar logo and menu bar style general*/
+.logo{
+	max-width: 30%;
+  display: block;
+  margin-right: auto;
+}
+.menu{
+	position: absolute;
+	z-index: 2000;
+	top: 0;
+	right: 0;
+	height: 4px;
+	width: 24px;
+	text-align: right;
+	margin: 2rem 2rem;
+	background: #ec008c;
+	transition: all 0.3s;
+}
+.logo{
+	left: 0;
+	top: -4px;
+	width: 70px;
+	height: 74px;
+	padding: 0.4% 2%;
+	text-align: left;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-image: url(../image/huge.png);
+	background-size: 70px, 10px;
+}
+.menu:before, .menu:after{
+	content: '';
+	display: block;
+	width: 24px;
+	height: 4px;
+	background: #ec008c;
+	position: absolute;
+	z-index: -1;
+}
+.menu:before{
+	top: -8px;
+}
+.menu:after{
+	top: 8px;
+}
+#toggle:hover .menu:before{
+	top: -9px;
+}
+#toggle:hover .menu:after{
+	top: 9px;
 }
