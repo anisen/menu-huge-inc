@@ -11,5 +11,5 @@ window.addEventListener("scroll", function(){
 	}else{
 		console.log("up");
 	}
-	/*lastScrollTop=currentScroll;*/
+	lastScrollTop=currentScroll;
 });
